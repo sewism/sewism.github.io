@@ -11,9 +11,28 @@
         height: 75vh;
       }
       
+    /* Default styles */
+ img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Styles for vertical screens */
+  @media (orientation: portrait) {
     img {
-        width: 100%;
-      }
+      width: auto;
+      max-height: 100%;
+    }
+  }
+  
+  /* Styles for horizontal screens */
+  @media (orientation: landscape) {
+    img {
+      width: 100%;
+      max-height: none;
+    }
+  }
+  
 </style>
 </head>
 <body>
