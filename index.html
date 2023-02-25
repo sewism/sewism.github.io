@@ -9,30 +9,21 @@
         justify-content: center;
         align-items: center;
         height: 75vh;
-      }
-      
-    /* Default styles */
- img {
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Styles for vertical screens */
-  @media (orientation: portrait) {
-    img {
-      width: auto;
-      max-height: 100%;
+        }
+
+    /* Styles for vertical screens */
+    @media (orientation: portrait) {
+        img {
+        width: 100%;
+        }
     }
-  }
-  
-  /* Styles for horizontal screens */
-  @media (orientation: landscape) {
-    img {
-      width: 100%;
-      max-height: none;
+
+    /* Styles for horizontal screens */
+    @media (orientation: landscape) {
+        img {
+        height: 100%;
+        }
     }
-  }
-  
 </style>
 </head>
 <body>
